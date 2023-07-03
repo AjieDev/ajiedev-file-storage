@@ -11,7 +11,7 @@ if %errorlevel% EQU 0 (cscript //nologo slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T
 if %i% GTR 8 (goto busy) else if %i% LEQ 2 (set KMS=e8.us.to) else if %i% LEQ 4 (set KMS=e9.us.to) else if %i% LEQ 6 (set KMS=kms8.MSGuides.com) else if %i% LEQ 8 (set KMS=kms9.MSGuides.com)
 cscript //nologo slmgr.vbs /skms %KMS%:1688 >nul
 :ato
-echo ============================================================================&echo.&echo.&cscript //nologo slmgr.vbs /ato | find /i "successfully" && (echo.&echo ============================================================================&echo.&echo Windows Activated Succesfully, If not, it's not your luck.&echo.& if errorlevel 2 exit) || (echo It seems half failed, but we still trying... & echo. & echo. & set /a i+=1 & timeout /t 10 >nul & goto server)&explorer "http://ajiedev-net.rf.gd/winfree-prompt"&goto halt
+echo ============================================================================&echo.&echo.&cscript //nologo slmgr.vbs /ato | find /i "successfully" && (echo.&echo ============================================================================&echo.&echo Windows Activated Succesfully, If not, it's not your luck.&echo.& if errorlevel 2 exit) || (echo It seems half failed, but we still trying... & echo. & echo. & set /a i+=1 & timeout /t 10 >nul & goto server)&explorer "https://bit.ly/a-winfree-prompt"&goto halt
 :notsupported
 echo ============================================================================&echo.&echo FAILED, Your windows is NOT supported.&echo.&goto halt
 :wshdisabled
